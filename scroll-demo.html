@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Scroll Effect</title>
+	<style type="text/css">
+		* {
+			margin: 0px;
+			padding: 0px;
+		}
+
+		#header {
+			height: 150px;
+			width: 100%;
+			background-color: #ccc;
+			position: fixed;
+			transition: all 0.4s;
+		}
+		div {
+			height: 2000px;
+		}
+	</style>
+
+
+</head>
+<body>
+	<header id="header">
+	</header>
+	<div>
+		Test
+	</div>
+	<script type="text/javascript">
+		function Scroll() {
+			var top = document.getElementById('header');
+			var ypos = window.pageYOffset;
+			
+			if (ypos > 587) {
+				top.style.height = "70px";
+			} else {
+				top.style.height = "150px";
+			}
+			window.addEventLister("scroll", Scroll);
+		}
+	</script>
+</body>
+</html>

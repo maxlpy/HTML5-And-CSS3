@@ -1,0 +1,58 @@
+/* Get rid of default padding and margin*/
+/** {
+	margin: 0px;
+	padding: 0px
+	list-style-type: none;
+}*/
+
+header, nav, article, section, aside, footer {
+	display: block;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	width: 330px;
+	margin:30px auto;
+	border: 1px solid grey;
+	padding: 10px;
+
+}
+
+fieldset {
+	width: 320px;
+}
+
+.personal_info label {
+	float: left;
+	width: 100px;
+	text-align: left;
+	/*margin-right: 10px;*/
+}
+
+
+.input_box {
+	width: 150px;
+}
+
+ul li {
+	display: inline;
+	list-style-type none;
+	padding: 25px;
+}
+
+.button_position {
+	text-align: center;
+}
+
+.button_attr {
+	margin:0 20px;
+	width: 60px;
+	background-color: green;
+}
+
+
+

@@ -1,0 +1,100 @@
+/* Get rid of default padding and margin*/
+* {
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none;
+}
+/* In order to fit for kinds of browsers*/
+header, nav, article, section, aside, footer {
+	display: block;
+}
+
+/* Centering website */
+.layout_container {
+	width: 1000px;
+	margin: 0px auto;  /*top and bottom are 0, left and right are auto*/
+}
+
+#header {
+	height: 40px;
+	width: 1000px;
+	position: fixed;
+	transition: all 0.4s;
+	background-color: #ccc;	
+}
+
+.logo {
+	width: 80px;
+	height: 40px;
+	float: left;
+}
+
+.top_nav {
+	width: 620px;
+	float: left;
+}
+
+.top_nav ul li {
+	/*float: left;*/  /*No space among items*/
+	display: inline-block;  /*Leave a little space among items*/
+	padding: 15px 20px;  /*top left bottom right*/
+}
+
+.top_right {
+	float: left;
+	width: 300px;
+}
+
+.top_right h4 {
+	float: right;
+	margin: 15px;
+}
+
+.top_right a {
+	float: right;
+	text-decoration: none;  /*remove underline*/
+	margin: 10px;
+	border: 1px solid blue;
+	padding: 5px 10px 5px 10px;
+	background-color: green;
+	color: white;
+}
+
+.main_body {
+	height: 2000px;
+	float: left;
+	margin-top: 60px;
+}
+
+.clear {
+	clear: both;
+}
+
+/*Float aside and main section*/
+.left_side {
+	width: 700px;
+	float: left;
+}
+
+.left_side article {
+	border: 2px solid red;
+	margin-right: 10px;
+	padding: 10px;
+}
+
+.right_side {	
+	width: 300px;
+	float: left;
+}
+
+.right_side div {
+	border: 2px solid blue;
+	margin-bottom: 10px;
+	padding: 10px;
+}
+
+/*Make footer clear floated elements*/
+.page_footer {
+	clear: both;
+	text-align: center;
+}
